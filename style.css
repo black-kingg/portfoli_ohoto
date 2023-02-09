@@ -2,10 +2,10 @@
     /*==theme==*/
     --color-primary: #ff7b02;
     --color-primary-variant: #e5a55d;
-    --color-bg-1: #000e17;
-    --color-bg-2: #001e2d;
-    --color-bg-3: #012734;
-    --color-bg-4: #003347;
+    --color-bg-1: #00004a;
+    --color-bg-2: #000080;
+    --color-bg-3: #0202b1;
+    --color-bg-4: #0808e3;
     --color-light: #85a2b2;
     --color-white: hsl(0, 0%, 90%);
 
@@ -373,5 +373,5 @@ header{
 }
 
 .about_right p{
-    margin: 0 4rem 1.5rem 0;
+    margin: 0 4rem 1.5rem;
 }
