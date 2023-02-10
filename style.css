@@ -2,11 +2,11 @@
     /*==theme==*/
     --color-primary: #ff7b02;
     --color-primary-variant: #e5a55d;
-    --color-bg-1: #000e17;
-    --color-bg-2: #001e2d;
-    --color-bg-3: #012734;
-    --color-bg-4: #003347;
-    --color-light: #85a2b2;
+    --color-bg-1: #000000;
+    --color-bg-2: #202020;
+    --color-bg-3: #424242;
+    --color-bg-4: #4f5050;
+    --color-light: #a4a8ab;
     --color-white: hsl(0, 0%, 90%);
 
     --container-width-lg: 88%;
@@ -392,5 +392,20 @@ header{
 }
 
 .gallery_head{
-    
+    display: grid;
+    grid-template-columns: auto 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery_head > p{
+    width: 45rem;   
+}
+
+.gallery_btn{
+    color: var(--color-primary-variant);
+}
+
+.gallery_btn:hover{
+    transform: translateY(-1rem);
 }
