@@ -192,6 +192,10 @@ header{
     left: 0;    
 }
 
+.header_socials{
+    display: none;
+}
+
 .header_head{
     display: flex;
     gap: 2rem;
@@ -267,7 +271,7 @@ header{
     background: linear-gradient(-30deg, var( --color-primary), var(--color-primary-variant));
     position: absolute;
     right: 6%;
-    bottom: -5rem;
+    bottom: -9.6rem;
 }
 
 .header_btn:hover{
@@ -662,6 +666,21 @@ footer{
     .header_head{
         justify-content: center;
     }
+    .header_socials{
+        width: 2rem;
+        height: 2rem;
+        background: linear-gradient(var(--color-primary-variant), var(--color-primary) );
+        border-radius: 0.5rem;
+        color: var(--color-bg-4);
+        display: grid;
+        place-items: center;
+    }
+
+    .header_socials{
+        display: flex;
+        gap: 1rem;
+    }
+
     .header_right p{
         margin-top: 1rem;
     }
