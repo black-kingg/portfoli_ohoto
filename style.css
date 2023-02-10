@@ -8,6 +8,7 @@
     --color-bg-4: #003347;
     --color-light: #85a2b2;
     --color-white: hsl(0, 0%, 90%);
+    --color-text: #128ab2;
 
     --container-width-lg: 88%;
     --container-width-md: 92%;
@@ -32,7 +33,7 @@ html{
 
 body{
     background: var(--color-bg-3);
-    color: var(--color-light) url('img/bg-texture.png');
+    color: var(--color-text) ;
     line-height: 1.7;
 }
 
