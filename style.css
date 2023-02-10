@@ -409,3 +409,215 @@ header{
 .gallery_btn:hover{
     transform: translateY(-1rem);
 }
+
+.gallery_pic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+.gallery_pic article{
+    border: 0.5rem solid var(--color-bg-4);
+    transition: var(--transition);
+}
+
+.gallery_pic article:nth-child(1){
+    grid-row: 1/3;
+}
+
+.gallery_pic article:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.gallery_pic article img{
+    height: 100%;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+
+.gallery_pic article:hover img{
+    filter: saturate(1);
+}
+
+.gallery_pic article:hover{
+    box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    margin-top: 7rem;
+}
+
+.footer_container{
+    border-top: 0.5rem solid var(--color-bg-4);
+    padding-bottom: 1.6rem;
+    padding-top: 5rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.footer_links{
+    position: absolute;
+    display: flex;
+    right: 4.8rem;
+    gap: 2rem;
+}
+
+
+/*------------media -----------*/
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+        position: relative;
+    }
+    h1{
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    .nav_socials{
+        display: none;
+    }
+    .nav_links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+    .nav_links li{
+        height: 5rem;
+        box-shadow: -3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+        animation: navAnimation 600ms ease forwards;
+        transform: rotateX('90deg');
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    .nav_links li:nth-child(2){
+        animation-delay: 200ms;
+    }
+
+    .nav_links li:nth-child(3){
+        animation-delay: 400ms;
+    }
+
+    .nav_links li:nth-child(4){
+        animation-delay: 600ms;
+    }
+
+    @keyframes navAnimation {
+        to {
+            transform: rotate(0);
+            opacity: 1;
+        }
+    }
+
+    .nav_links li a{
+        background: var(--color-bg-4);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 5rem 3rem;
+        border-top: 1px solid var(--color-bg-2);
+    }
+    .nav_toggle-btn{
+        display: inline-block;
+        font-size: 2rem;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-white);
+    }
+    #nav_toggle-close{
+        display: none;
+    }
+
+
+
+    header{
+        height: fit-content;
+        padding: 14rem 0 12rem;
+        display: grid;
+        place-items: center;
+    }
+    .header_img-bg, .header_img-sm{
+        display: none;
+    }
+    .header-container{
+        grid-template-columns: 40% 54%;
+        gap: 6%;
+        margin: 0; 
+    }
+    .header_img-lg{
+        filter: saturate(1) brightness(1);
+        border: 1rem solid var(--color-bg-2);
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .header_tag{
+        margin-bottom: 1rem;
+    }
+    .empty{
+        display: none;
+    }
+    .header_right p{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .header_frames, .contact_btn{
+        display: none;
+    }
+    .header_btn-md{
+        background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
+        color: var(--color-bg-1);
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 0.6rem 1.6rem;
+        font-weight: 0.3rem;
+        border-radius: 0.3rem;
+    }
+    .header_btn-md:hover{
+        color: var(--color-bg-1);
+    }
+
+
+    .about_container{
+        grid-template-columns: 40% 54%;
+        gap: 6%;
+    }
+    .about_img-bg, .about_img-sm{
+        display: none;
+    }
+    .about_img-lg{
+        filter: saturate(1) brightness(1);
+        top: 0;
+        left: 0;
+    }
+    .about_image:hover .about_img-lg{
+        border: none;
+    }
+    .about_right p {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .gallery_head > p{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .gallery_pic{
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+    .gallery_pic article{
+        border: none;
+    }
+}
