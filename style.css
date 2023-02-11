@@ -670,7 +670,7 @@ footer{
         margin-top: 6rem;
     }
     .gallery_head{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1.1fr;
     }
     .gallery_head > p{
         margin-top: 1rem;
